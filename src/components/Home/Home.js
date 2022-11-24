@@ -18,13 +18,15 @@ const Home = (props) =>{
                     
                 </div>
             </div>
-            <div className="home__onzefeatures">
+            <section className="home__features">
                 <h2>Onze Features</h2>
-                <FeatureCard />
-                <FeatureCard />
-                <FeatureCard />
-                <FeatureCard />
-            </div>
+                <div className="home__featureCards">
+                <FeatureCard featureName="PC builder" featureInformation="lorem ipsum lorem ipsum lorem ipsum"/>
+                <FeatureCard featureName="PC builder" featureInformation="lorem ipsum lorem ipsum lorem ipsum"/>
+                <FeatureCard featureName="PC builder" featureInformation="lorem ipsum lorem ipsum lorem ipsum"/>
+                <FeatureCard featureName="PC builder" featureInformation="lorem ipsum lorem ipsum lorem ipsum"/>
+                </div>
+            </section>
             <div className="home__prijs">
 
             </div>
