@@ -1,6 +1,6 @@
-import "./FeatureCard.css"
+import "./PriceCard.css"
 
-const FeatureCard = (props) => {
+const PriceCard = (props) => {
     return (
         <>
             <article className="feature">
@@ -12,4 +12,4 @@ const FeatureCard = (props) => {
     )
 }
 
-export default FeatureCard;
+export default PriceCard;

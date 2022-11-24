@@ -1,6 +1,6 @@
 import "./Home.css"
 
-import "../FeatureCard/FeatureCard";
+
 import FeatureCard from "../FeatureCard/FeatureCard";
 
 const Home = (props) =>{
@@ -19,12 +19,12 @@ const Home = (props) =>{
                 </div>
             </div>
             <section className="home__features">
-                <h2>Onze Features</h2>
+                <h2 className="home__name">Onze Features</h2>
                 <div className="home__featureCards">
-                <FeatureCard featureName="PC builder" featureInformation="lorem ipsum lorem ipsum lorem ipsum"/>
-                <FeatureCard featureName="PC builder" featureInformation="lorem ipsum lorem ipsum lorem ipsum"/>
-                <FeatureCard featureName="PC builder" featureInformation="lorem ipsum lorem ipsum lorem ipsum"/>
-                <FeatureCard featureName="PC builder" featureInformation="lorem ipsum lorem ipsum lorem ipsum"/>
+                <FeatureCard featureName="PC builder" featureInformation="Gebruik onze geoptimaliseerde PC builder om uw nieuwe computer samen te stellen!"/>
+                <FeatureCard featureName="24/7 tech support" featureInformation="Voor problemen met onze producten kunt u elk moment van de dag onze support center bellen!"/>
+                <FeatureCard featureName="Laptop kiezer" featureInformation="Met onze laptop kiezer kunt u de beste laptop vinden voor wat u nodig heeft!"/>
+                <FeatureCard featureName="Retour" featureInformation="Niet goed? geld terug, zolang het product nog functioneel is kunt u binnen 2 maanden een voledige refund krijgen!"/>
                 </div>
             </section>
             <div className="home__prijs">
