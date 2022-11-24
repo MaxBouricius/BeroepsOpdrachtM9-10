@@ -1,10 +1,12 @@
 .priceCard{
     color: #003A9B;
+    background-color: #bfd6fd;
     padding: 1rem;
+    border-radius: 1rem;
     min-width: 35rem;
     min-height: 50rem;
-    border-radius: 0.4rem;
-    box-shadow:inset 0 0 1rem 0rem;
+    display: flex;
+    justify-content: center;
     transition: 0.3s;
 }
 

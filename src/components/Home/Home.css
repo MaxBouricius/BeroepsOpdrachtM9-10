@@ -10,3 +10,12 @@
     margin-left: 20rem;
     color: #003A9B;
 }
+
+.home__packages{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}

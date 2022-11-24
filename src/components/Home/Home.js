@@ -1,6 +1,7 @@
 import "./Home.css"
-
-
+import premiumPackageFeatures from "../../Data/premiumPackagesFeatures";
+import standaardPackageFeatures from "../../Data/standaardPackageFeatures";
+import basicPackageFeatures from "../../Data/basicPackageFeatures";
 import FeatureCard from "../FeatureCard/FeatureCard";
 import PriceCard from "../PriceCard/PriceCard";
 
@@ -30,8 +31,10 @@ const Home = (props) => {
             </section>
             <section className="home__prijs">
                 <h2 className="section__title">Onze support packages</h2>
-                <div className="home__featureCards">
-                    <PriceCard priceCardTitle="Support package BASIC"/>
+                <div className="home__packages">
+                    <PriceCard features={basicPackageFeatures} priceCardTitle="Support package basis"/>
+                    <PriceCard features={standaardPackageFeatures} priceCardTitle="Support package standaard"/>
+                    <PriceCard features={premiumPackageFeatures} priceCardTitle="Support package premium"/>
                 </div>
             </section>
             <section className="home__contact">
