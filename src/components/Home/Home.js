@@ -4,12 +4,13 @@ import standaardPackageFeatures from "../../Data/standaardPackageFeatures";
 import basicPackageFeatures from "../../Data/basicPackageFeatures";
 import FeatureCard from "../FeatureCard/FeatureCard";
 import PriceCard from "../PriceCard/PriceCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Home = (props) => {
     return (
         <>
             <section className="home__header">
-
+            <FontAwesomeIcon icon="fa-regular fa-square-check" />
             </section>
             <section className="home__over">
                 <article className="home__oversection1">
@@ -21,7 +22,7 @@ const Home = (props) => {
                 </article>
             </section>
             <section className="home__features">
-                <h2 className="home__name">Onze Features</h2>
+                <h2 className="section__title">Onze Features</h2>
                 <div className="home__featureCards">
                     <FeatureCard featureName="PC builder" featureInformation="Gebruik onze geoptimaliseerde PC builder om uw nieuwe computer samen te stellen!" />
                     <FeatureCard featureName="24/7 tech support" featureInformation="Voor problemen met onze producten kunt u elk moment van de dag onze support center bellen!" />

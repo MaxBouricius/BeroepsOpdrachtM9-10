@@ -5,11 +5,42 @@
     border-radius: 1rem;
     min-width: 35rem;
     min-height: 50rem;
+    max-width: 35rem;
+    max-height: 50rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     transition: 0.3s;
 }
 
 .priceCard:hover{
     scale: 1.05;
+}
+.priceCardtitle{
+    padding: 1rem;
+    padding-bottom: 5rem;
+}
+.priceCard__container{
+    min-height: 40rem;
+}
+.priceCardfeatures{
+    padding: 1rem;
+}
+.priceCard__feature{
+    display: flex;
+    align-items: center;
+}
+.priceCard__icon{
+    padding: 1rem;
+}
+.priceCard__button{
+    align-self: center;
+    border-radius: 0.5rem;
+    min-height: 4rem;
+    min-width: 20rem;
+    border: none;
+    background-color: #003A9B;
+    color: #EEE;
+}
+.priceCard__button:hover{
+    background: #1c5ac4;
 }
