@@ -4,22 +4,18 @@ import standaardPackageFeatures from "../../Data/standaardPackageFeatures";
 import basicPackageFeatures from "../../Data/basicPackageFeatures";
 import FeatureCard from "../FeatureCard/FeatureCard";
 import PriceCard from "../PriceCard/PriceCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Home = (props) => {
     return (
         <>
             <section className="home__header">
-            <FontAwesomeIcon icon="fa-regular fa-square-check" />
             </section>
             <section className="home__over">
-                <article className="home__oversection1">
-                    <h2>Over Callizione</h2>
-                    <p>Een tekst waarom jij Callizione zou moeten gebruiken </p>
-                </article>
-                <article className="home__oversection2">
-
-                </article>
+                <div>
+                    <h2 className="section__title">Over Maxitech</h2>
+                    <p className="home__text">Een tekst waarom jij Callizione zou moeten gebruiken </p>
+                </div>
+                <img className="home__image" src="/img/placeholderFoto.png" alt="" />
             </section>
             <section className="home__features">
                 <h2 className="section__title">Onze Features</h2>
@@ -33,14 +29,28 @@ const Home = (props) => {
             <section className="home__prijs">
                 <h2 className="section__title">Onze support packages</h2>
                 <div className="home__packages">
-                    <PriceCard features={basicPackageFeatures} priceCardTitle="Support package basis"/>
-                    <PriceCard features={standaardPackageFeatures} priceCardTitle="Support package standaard"/>
-                    <PriceCard features={premiumPackageFeatures} priceCardTitle="Support package premium"/>
+                    <PriceCard features={basicPackageFeatures} priceCardTitle="Support package basis" />
+                    <PriceCard features={standaardPackageFeatures} priceCardTitle="Support package standaard" />
+                    <PriceCard features={premiumPackageFeatures} priceCardTitle="Support package premium" />
                 </div>
             </section>
             <section className="home__contact">
-
+                <h2 className="section__title">Contact</h2>
+                <article className="contact__inputSection">
+                    <p className="contact__title">Name</p>
+                    <input className="contact__text" type="text" placeholder="Zet hier je naam" />
+                    <p className="contact__title">Email</p>
+                    <input className="contact__text" type="text" placeholder="Zet hier je email" />
+                    <p className="contact__title">Bericht / vraag</p>
+                    <input className="contact__text" type="text" placeholder="Zet hier jou vraag" />
+                </article>
+                <input className="contact__button" type="button" value="Send!" />
             </section>
+            <footer className="footer">
+                <section>
+                    <p>2022 Maxitech - Toegangelijkheid bij Maxitech - Privacycenter - Cookies - Pricacybeleid </p>
+                </section>
+            </footer>
         </>
     )
 }
