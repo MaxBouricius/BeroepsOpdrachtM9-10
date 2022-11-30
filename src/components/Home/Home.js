@@ -8,7 +8,12 @@ import PriceCard from "../PriceCard/PriceCard";
 const Home = (props) => {
     return (
         <>
+
+            <section className="home__nav">
+
+            </section>
             <section className="home__header">
+                <img className="home__bannerImage" src="/img/bannerFoto.jpg" alt="" />
             </section>
             <section className="home__over">
                 <div>
