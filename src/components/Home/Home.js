@@ -8,21 +8,35 @@ import PriceCard from "../PriceCard/PriceCard";
 const Home = (props) => {
     return (
         <>
-
-            <section className="home__nav">
-
+            <section className="nav">
+                <div className="nav__left">
+                    <input className="nav__button nav__buttonWhite" type="button" name="over" value="Over" />
+                    <input className="nav__button nav__buttonWhite" type="button" name="over" value="Features" />
+                    <input className="nav__button nav__buttonWhite" type="button" name="over" value="Prijs" />
+                    <input className="nav__button nav__buttonWhite" type="button" name="over" value="Contact" />
+                </div>
+                <div className="nav__right">
+                    <input className="nav__button nav__buttonBlue" type="button" name="over" value="login" />
+                </div>
             </section>
-            <section className="home__header">
+
+            <section className="section__wrapper section__header">
+                <div>
+                    <h1 className="home__headerTitle">MaxiTech</h1>
+                    <p className="home__ctaText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore necessitatibus ratione eligendi temporibus, tenetur debitis repellendus ipsum fuga explicabo. Modi amet iure repudiandae reprehenderit libero quam necessitatibus deserunt at!</p>
+                </div>
                 <img className="home__bannerImage" src="/img/bannerFoto.jpg" alt="" />
             </section>
-            <section className="home__over">
-                <div>
-                    <h2 className="section__title">Over Maxitech</h2>
-                    <p className="home__text">Een tekst waarom jij Callizione zou moeten gebruiken </p>
+
+            <section className="section__wrapper section__over">
+                <div className="home__overLeft">
+                    <h2 className="section__title">Over MaxiTech</h2>
+                    <p className="home__overText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptate reiciendis sapiente ut facilis magni soluta molestias dolore dolores commodi voluptas id, officiis iure? Eaque dolorum fugiat fugit perspiciatis tempora. </p>
                 </div>
-                <img className="home__image" src="/img/placeholderFoto.png" alt="" />
+                <img className="home__overImage" src="/img/overFoto.jpg" alt="" />
             </section>
-            <section className="home__features">
+
+            <section className="section__wrapper">
                 <h2 className="section__title">Onze Features</h2>
                 <div className="home__featureCards">
                     <FeatureCard featureName="PC builder" featureInformation="Gebruik onze geoptimaliseerde PC builder om uw nieuwe computer samen te stellen!" />
@@ -31,7 +45,8 @@ const Home = (props) => {
                     <FeatureCard featureName="Retour" featureInformation="Niet goed? geld terug, zolang het product nog functioneel is kunt u binnen 2 maanden een voledige refund krijgen!" />
                 </div>
             </section>
-            <section className="home__prijs">
+
+            <section className="section__wrapper">
                 <h2 className="section__title">Onze support packages</h2>
                 <div className="home__packages">
                     <PriceCard features={basicPackageFeatures} priceCardTitle="Support package basis" />
@@ -39,7 +54,8 @@ const Home = (props) => {
                     <PriceCard features={premiumPackageFeatures} priceCardTitle="Support package premium" />
                 </div>
             </section>
-            <section className="home__contact">
+
+            <section className="section__wrapper">
                 <h2 className="section__title">Contact</h2>
                 <article className="contact__inputSection">
                     <p className="contact__title">Name</p>
@@ -51,6 +67,7 @@ const Home = (props) => {
                 </article>
                 <input className="contact__button" type="button" value="Send!" />
             </section>
+
             <footer className="footer">
                 <section>
                     <p>2022 Maxitech - Toegangelijkheid bij Maxitech - Privacycenter - Cookies - Pricacybeleid </p>
