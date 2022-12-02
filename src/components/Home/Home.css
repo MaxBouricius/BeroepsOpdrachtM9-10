@@ -50,11 +50,16 @@
     background: #003A9B;
 }
 
-/* home header */
+/* home header and over*/
 
 .section__header{
     display: flex;
 }
+
+.section__container{
+    width: 60%;
+}
+
 
 .home__headerTitle{
     font-size: 300%;
@@ -68,7 +73,7 @@
 }
 
 .home__ctaText {
-    max-width: 60%;
+    width: 60%;
 }
 
 .home__imageWrapper{
@@ -93,38 +98,13 @@
     .home__bannerImage {
         display: none;
     }
+    .section__container{
+        width: 100%;
+    }
     .home__ctaText {
-        max-width: 100%;
+        width: 100%;
     }
 }
-
-/* over */
-
-.section__over {
-    display: flex;
-    gap: 20rem;
-}
-
-.home__overLeft {
-    width: 40%;
-}
-
-.home__overText{
-    display: flex;
-    justify-content: center;
-}
-
-.home__overImage {
-    margin-top: 5rem;
-    max-height: 30rem;
-}
-
-@media only screen and (max-width: 1400px) {
-    .home__overImage {
-        display: none;
-    }
-}
-
 
 /* feature cards */
 

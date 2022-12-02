@@ -21,7 +21,7 @@ const Home = (props) => {
             </section>
 
             <section className="section__wrapper section__header">
-                <div>
+                <div className="section__container">
                     <h1 className="home__headerTitle">MaxiTech</h1>
                     <p className="home__ctaText">
                         Wij zijn MaxiTech, bij ons kun je alles vinden van kabels tot kant en klare computers.
@@ -35,17 +35,20 @@ const Home = (props) => {
                 </div>
             </section>
 
-            <section className="section__wrapper section__over">
-                <div className="home__overLeft">
-                    <h2 className="section__title">Over MaxiTech</h2>
-                    <div className="home__overText">
-                        <p>Wij zijn een klein bedrijf gebaseerd in De Kwakel, eerst was het alleen onze CEO Max Peter Bouricius maar over tijd werdt het teveel werk voor alleen 1 persoon dus toen zijn wij langzamerhand uitgebreid tot het 17 man bedrijf wat wij vandaag zijn.</p>
-                    </div>
-
+            <section className="section__wrapper section__header">
+                <div className="section__container">
+                    <h2 className="section__title">MaxiTech</h2>
+                    <p className="home__ctaText">
+                    Wij zijn een klein bedrijf gebaseerd in De Kwakel, eerst was het alleen onze CEO Max Peter Bouricius  maar over tijd werdt
+                    <br/>
+                    <br />
+                    het teveel werk voor alleen 1 persoon dus toen zijn wij langzamerhand uitgebreid tot het 17 man bedrijf wat wij vandaag zijn.
+                    </p>
                 </div>
-                <img className="home__overImage" src="/img/overFoto.jpg" alt="" />
+                <div className="home__imageWrapper">
+                    <img className="home__bannerImage" src="/img/overFoto.jpg" alt="" />
+                </div>
             </section>
-
             <section className="section__wrapper">
                 <h2 className="section__title">Onze Features</h2>
                 <div className="home__featureCards">
