@@ -8,7 +8,7 @@ const PriceCard = (props) => {
                     {props.features.map((feature) => (
                         <>
                             <article className="priceCard__feature">
-                                <i class="fa-regular fa-square-check priceCard__icon"></i>
+                                <i className="fa-regular fa-square-check priceCard__icon"></i>
                                 <p>{feature.feature}</p>
                             </article>
                         </>

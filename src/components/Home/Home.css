@@ -12,9 +12,9 @@
     margin-bottom: 5rem;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1400px) {
     .section__wrapper {
-        margin: 1rem;
+        margin: 8rem;
     }
 }
 
@@ -25,10 +25,6 @@
     width: 100%;
     border-bottom: 1px solid rgb(207, 201, 201);
     margin-bottom: 4rem;
-}
-
-.nav__title{
-    
 }
 
 .nav__button{
@@ -53,6 +49,7 @@
     color: #ffffff;
     background: #003A9B;
 }
+
 /* home header */
 
 .section__header{
@@ -67,37 +64,34 @@
 
 .home__bannerImage {
     width: auto;
-    height: 50rem;
+    height: 30rem;
 }
 
 .home__ctaText {
     max-width: 60%;
 }
 
-@media only screen and (max-width: 1500px) {
+.home__imageWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1400px) {
     .home__bannerImage {
+        width: auto;
         height: 30rem;
     }
 }
-
 @media only screen and (max-width: 1200px) {
     .home__bannerImage {
+        width: auto;
         height: 20rem;
     }
 }
-
-@media only screen and (max-width: 1001px) {
+@media only screen and (max-width: 1000px) {
     .home__bannerImage {
-        height: 15rem;
-        margin: 5rem;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .home__bannerImage {
-        visibility: hidden;
-        height: 1rem;
-        width: 1rem;
+        display: none;
     }
     .home__ctaText {
         max-width: 100%;
@@ -115,30 +109,22 @@
     width: 40%;
 }
 
+.home__overText{
+    display: flex;
+    justify-content: center;
+}
+
 .home__overImage {
     margin-top: 5rem;
-    max-height: 50rem;
+    max-height: 30rem;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1400px) {
     .home__overImage {
-        visibility: hidden;
-    }
-    .home__overLeft {
-        min-width: 50rem;
-    }
-    .home__overImage {
-        margin-top: 5rem;
-        max-height: 30rem;
+        display: none;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .home__overLeft {
-        min-width: 30rem;
-        height: 20rem;
-    }
-}
 
 /* feature cards */
 

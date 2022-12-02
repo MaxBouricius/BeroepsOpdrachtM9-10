@@ -23,15 +23,25 @@ const Home = (props) => {
             <section className="section__wrapper section__header">
                 <div>
                     <h1 className="home__headerTitle">MaxiTech</h1>
-                    <p className="home__ctaText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore necessitatibus ratione eligendi temporibus, tenetur debitis repellendus ipsum fuga explicabo. Modi amet iure repudiandae reprehenderit libero quam necessitatibus deserunt at!</p>
+                    <p className="home__ctaText">
+                        Wij zijn MaxiTech, bij ons kun je alles vinden van kabels tot kant en klare computers.
+                        <br />
+                        <br />
+                        Maar het geneding waar wij het meest trots op zijn is ons ruime asortiment van computer onderdelen.
+                    </p>
                 </div>
-                <img className="home__bannerImage" src="/img/bannerFoto.jpg" alt="" />
+                <div className="home__imageWrapper">
+                    <img className="home__bannerImage" src="/img/bannerFoto.jpg" alt="" />
+                </div>
             </section>
 
             <section className="section__wrapper section__over">
                 <div className="home__overLeft">
                     <h2 className="section__title">Over MaxiTech</h2>
-                    <p className="home__overText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptate reiciendis sapiente ut facilis magni soluta molestias dolore dolores commodi voluptas id, officiis iure? Eaque dolorum fugiat fugit perspiciatis tempora. </p>
+                    <div className="home__overText">
+                        <p>Wij zijn een klein bedrijf gebaseerd in De Kwakel, eerst was het alleen onze CEO Max Peter Bouricius maar over tijd werdt het teveel werk voor alleen 1 persoon dus toen zijn wij langzamerhand uitgebreid tot het 17 man bedrijf wat wij vandaag zijn.</p>
+                    </div>
+
                 </div>
                 <img className="home__overImage" src="/img/overFoto.jpg" alt="" />
             </section>
