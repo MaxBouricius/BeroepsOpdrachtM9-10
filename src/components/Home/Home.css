@@ -41,13 +41,25 @@
     margin-left: auto;
 }
 
-.nav__buttonWhite{
-
-}
-
 .nav__buttonBlue{
     color: #ffffff;
     background: #003A9B;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav__left{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .nav__right{
+        margin-left: 0;
+    }
 }
 
 /* home header and over*/
@@ -131,20 +143,31 @@
 
 .contact__inputSection {
     margin-left: 20rem;
+    background-color: #BFD6FD;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
 }
 
 .contact__title {
     color: #003A9B;
-    font-size: 160%;
+    font-size: 140%;
+}
+
+.contact__bericht{
+    width: 35rem !important;
+    height: 10rem !important;
 }
 
 .contact__text {
-    height: 12rem;
-    width: 60rem;
+    height: 6rem;
+    width: 30rem;
     text-align: center;
     border-radius: 0.4rem;
     border-style: solid;
-    font-size: 160%;
+    font-size: 100%;
     margin-bottom: 4rem;
     transition: 0.3s;
 }
@@ -154,11 +177,10 @@
 }
 
 .contact__button {
-    margin-left: 20rem;
     border-radius: 0.5rem;
-    font-size: 160%;
-    min-height: 8rem;
-    min-width: 35rem;
+    font-size: 80%;
+    height: 6rem;
+    width: 20rem;
     border: none;
     background-color: #003A9B;
     color: #EEE;
@@ -168,6 +190,11 @@
 .contact__button:hover {
     scale: 1.02;
     background: #1c5ac4;
+}
+
+.send__wrapper{
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 1100px) {

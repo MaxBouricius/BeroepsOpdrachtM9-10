@@ -76,9 +76,12 @@ const Home = (props) => {
                     <p className="contact__title">Email</p>
                     <input className="contact__text" type="text" placeholder="Zet hier je email" />
                     <p className="contact__title">Bericht / vraag</p>
-                    <input className="contact__text" type="text" placeholder="Zet hier jou vraag" />
+                    <input className="contact__text contact__bericht" type="text" placeholder="Zet hier jou vraag" />
+                    <div className="send__wrapper">
+                        <input className="contact__button" type="button" value="Send!" />
+                    </div>
+                    
                 </article>
-                <input className="contact__button" type="button" value="Send!" />
             </section>
 
             <footer className="footer">
