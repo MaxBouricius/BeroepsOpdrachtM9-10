@@ -14,6 +14,7 @@ const Home = (props) => {
                     <input className="nav__button nav__buttonWhite" type="button" name="over" value="Features" />
                     <input className="nav__button nav__buttonWhite" type="button" name="over" value="Prijs" />
                     <input className="nav__button nav__buttonWhite" type="button" name="over" value="Contact" />
+                    <input className="nav__button nav__buttonWhite" type="button" name="over" value="Selectie" />
                 </div>
                 <div className="nav__right">
                     <input className="nav__button nav__buttonBlue" type="button" name="over" value="login" />
