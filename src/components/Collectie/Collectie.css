@@ -1,0 +1,22 @@
+main{
+    width: 100%;
+    display: flex;
+}
+
+.leftSide{
+    width: 50%;
+}
+
+.itemList{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.items{
+    width: 30rem;
+    background-color: #bfd6fd;
+    padding: 4rem;
+    border-radius: 1rem;
+}

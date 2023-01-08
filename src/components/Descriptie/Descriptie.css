@@ -1,0 +1,12 @@
+.editButton{
+    float: right;
+    width: 15rem;
+    height: 5rem;
+    border: none;
+    background-color: #bfd6fd;
+    margin: 4rem;
+}
+
+.descriptie{
+    font-size: 300%;
+}
