@@ -14,7 +14,6 @@ const Collectie = () => {
         setGeselecteerdeItem({
             ...items[index]
         })
-        console.log(index)
     }
     return (
         <>

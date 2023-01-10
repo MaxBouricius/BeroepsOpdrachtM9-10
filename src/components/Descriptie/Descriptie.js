@@ -4,7 +4,7 @@ import "./Descriptie.css";
 const Descriptie = (props) => {
     const { editing, setEditing, setItems, itemClicked,setGeselecteerdeItem, geselecteerdeItem,items} = props;
     const [editedDescriptie, setEditedDescriptie] = useState(geselecteerdeItem);
-    const X = (e) => {
+    const opslaan = (keyPressEvent) => {
         let itemCopy = [...itemList]
         let index = itemCopy.findIndex(i => i.id === editedDescriptie.id)
         itemCopy.splice(index, 1, editedDescriptie);
@@ -18,11 +18,11 @@ const Descriptie = (props) => {
             <div>
                 <button onClick={() => setEditing(!editing)}>Edit</button>
                 <div>
-                    <input onKeyUp={(e) => setEditedDescriptie({ ...geselecteerdeItem, titel: e.target.value })} type="text" defaultValue={geselecteerdeItem.titel} />
-                    <input onKeyUp={(e) => setEditedDescriptie({ ...geselecteerdeItem, omschrijving: e.target.value })} type="text" defaultValue={geselecteerdeItem.omschrijving} />
-                    <input onKeyUp={(e) => setEditedDescriptie({ ...geselecteerdeItem, andereInformatie: e.target.value })} type="text" defaultValue={geselecteerdeItem.andereInformatie} />
+                    <input onKeyUp={(keyPressEvent) => setEditedDescriptie({ ...geselecteerdeItem, titel: keyPressEvent.target.value })} type="text" defaultValue={geselecteerdeItem.titel} />
+                    <input onKeyUp={(keyPressEvent) => setEditedDescriptie({ ...geselecteerdeItem, omschrijving: keyPressEvent.target.value })} type="text" defaultValue={geselecteerdeItem.omschrijving} />
+                    <input onKeyUp={(keyPressEvent) => setEditedDescriptie({ ...geselecteerdeItem, andereInformatie: keyPressEvent.target.value })} type="text" defaultValue={geselecteerdeItem.andereInformatie} />
                 </div>
-                <button onClick={X}>Opslaan</button>
+                <button onClick={opslaan}>Opslaan</button>
             </div>
         )
     }
