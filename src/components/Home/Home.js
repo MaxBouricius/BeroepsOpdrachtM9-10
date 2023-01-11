@@ -4,23 +4,13 @@ import standaardPackageFeatures from "../../Data/standaardPackageFeatures";
 import basicPackageFeatures from "../../Data/basicPackageFeatures";
 import FeatureCard from "../FeatureCard/FeatureCard";
 import PriceCard from "../PriceCard/PriceCard";
-
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 const Home = (props) => {
     return (
         <>
-            <section className="nav">
-                <div className="nav__left">
-                    <input className="nav__button nav__buttonWhite" type="button" name="over" value="Over" />
-                    <input className="nav__button nav__buttonWhite" type="button" name="over" value="Features" />
-                    <input className="nav__button nav__buttonWhite" type="button" name="over" value="Prijs" />
-                    <input className="nav__button nav__buttonWhite" type="button" name="over" value="Contact" />
-                    <input className="nav__button nav__buttonWhite" type="button" name="over" value="Selectie" />
-                </div>
-                <div className="nav__right">
-                    <input className="nav__button nav__buttonBlue" type="button" name="over" value="login" />
-                </div>
-            </section>
-
+            
+            <Navbar/>
             <section className="section__wrapper section__header">
                 <div className="section__container">
                     <h1 className="home__headerTitle">MaxiTech</h1>
@@ -85,11 +75,8 @@ const Home = (props) => {
                 </article>
             </section>
 
-            <footer className="footer">
-                <section>
-                    <p>2022 Maxitech - Toegangelijkheid bij Maxitech - Privacycenter - Cookies - Pricacybeleid </p>
-                </section>
-            </footer>
+            <Footer/>
+            
         </>
     )
 }

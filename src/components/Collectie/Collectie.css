@@ -1,4 +1,4 @@
-main{
+.collectionPage{
     width: 100%;
     display: flex;
 }
@@ -7,16 +7,40 @@ main{
     width: 50%;
 }
 
-.itemList{
+.rightSide{
     width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
 }
 
-.items{
-    width: 30rem;
+/* Left side */
+.imageWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.displayImage{
+    width: 50%;
+    padding: 5rem;
     background-color: #bfd6fd;
-    padding: 4rem;
+    object-fit: cover;
     border-radius: 1rem;
+}
+
+/* Right side */
+
+.itemList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.listItem{
+    background-color: #bfd6fd;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.listItem img{
+    width: 25rem;
+    height: 25rem;
 }

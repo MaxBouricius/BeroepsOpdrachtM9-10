@@ -16,7 +16,7 @@ const Descriptie = (props) => {
     if (editing) {
         return (
             <div>
-                <button onClick={() => setEditing(!editing)}>Edit</button>
+                <button className='editButton' onClick={() => setEditing(!editing)}>Edit</button>
                 <div>
                     <input onKeyUp={(keyPressEvent) => setEditedDescriptie({ ...geselecteerdeItem, titel: keyPressEvent.target.value })} type="text" defaultValue={geselecteerdeItem.titel} />
                     <input onKeyUp={(keyPressEvent) => setEditedDescriptie({ ...geselecteerdeItem, omschrijving: keyPressEvent.target.value })} type="text" defaultValue={geselecteerdeItem.omschrijving} />
