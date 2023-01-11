@@ -18,7 +18,7 @@ const Home = (props) => {
                         Wij zijn MaxiTech, bij ons kun je alles vinden van kabels tot kant en klare computers.
                         <br />
                         <br />
-                        Maar het geneding waar wij het meest trots op zijn is ons ruime asortiment van computer onderdelen.
+                        Maar het ding waar wij het meest trots op zijn is ons ruime asortiment van computer onderdelen.
                     </p>
                 </div>
                 <div className="home__imageWrapper">

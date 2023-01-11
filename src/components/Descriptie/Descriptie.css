@@ -1,12 +1,37 @@
-.editButton{
+.editButton {
     float: right;
     width: 15rem;
     height: 5rem;
     border: none;
     background-color: #bfd6fd;
     margin: 4rem;
+    border-radius: 1rem;
+    border: solid 0.3rem #003A9B;
 }
 
-.descriptie{
-    font-size: 250%;
+.descriptieWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.descriptie {
+    border: solid 0.3rem #003A9B;
+    font-size: 150%;
+    background-color: #bfd6fd;
+    width: 70%;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+.inputField{
+    height: 4rem;
+    border: none;
+    padding: 1rem;
 }
